@@ -54,3 +54,15 @@ WRITE_DB_CONNECTION_LIMIT = 10
 ```
 
 - Use the `SQL` file located in `resources` folder to create the database
+
+- The source files are inside the /src folder. Let's define the roles of the folders inside /src
+
+  - config: contains the .env files
+  - controllers: contains the route handlers using methods inside ro  utes
+  - db: contains the database connection logic
+  - graphql: contains the resolvers and definitions
+  - routes: contains the definition of the routes using services
+  - services: contains the logic to fetch data from DB
+  - utils: contains the globally used util functions
+
+- As you can see, the codebase is organized as per the entities. What really helped me to scale here is the services folder, it is the real gem here
